@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/bgg"
+    tools:context=".EmergencyContacts">
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTintMode="add"
+        android:background="@color/whitee"
+        android:text="+" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEDI TIMEKEEPER"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/whitee"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:tooltipText="@string/common_google_play_services_enable_text"
+        android:contextClickable="true"
+        android:scrollbarStyle="insideOverlay"
+        android:id="@+id/listview1"/>
+
+</RelativeLayout>
